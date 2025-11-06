@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Dark mode (default) */
+  html.dark body {
+    background-color: #0f172a;
+    color: white;
+  }
+  
+  /* Light mode */
+  html.light body {
+    background-color: #ffffff;
+    color: #111827;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/50;
+  }
+  
+  /* Placeholder colors */
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-gray-500;
+  }
+  
+  html.dark input::placeholder,
+  html.dark textarea::placeholder {
+    @apply text-gray-400;
+  }
+}
+
