@@ -229,9 +229,8 @@ This project is open source and available for personal use.
 
 - Email: wardhanh886@gmail.com
 - LinkedIn: [Harshwardhan Singh](https://www.linkedin.com/in/harshwardhan-singh-96a443301/?originalSubdomain=in)
-- Phone: 9624013090
 
 ---
 
-Made with ❤️ using React, TypeScript, and Tailwind CSS
+Made with using React, TypeScript, and Tailwind CSS
 
