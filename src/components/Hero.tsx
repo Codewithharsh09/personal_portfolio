@@ -15,7 +15,7 @@ const Hero = () => {
   const [displayedText, setDisplayedText] = useState('');
   const [windowSize, setWindowSize] = useState({ width: 1920, height: 1080 });
   const fullText = "Hi, I'm Harshwardhan 👋";
-  const subtitle = "Backend Developer | Node.js | Flask | MongoDB | PostgreSQL";
+  const subtitle = "Backend Developer | Node.js (TypeScript) | Python (Flask) | PostgreSQL | MongoDB";
 
   useEffect(() => {
     // Set initial window size

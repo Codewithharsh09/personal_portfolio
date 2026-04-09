@@ -2,8 +2,6 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
-  SiHtml5,
-  SiCss3,
   SiJavascript,
   SiTypescript,
   SiNodedotjs,
@@ -14,7 +12,10 @@ import {
   SiFlask,
   SiGit,
   SiGithub,
+  SiGitlab,
   SiJson,
+  SiPostman,
+  SiAmazonaws,
 } from 'react-icons/si';
 
 interface Skill {
@@ -24,8 +25,6 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'HTML', icon: SiHtml5, category: 'Languages' },
-  { name: 'CSS', icon: SiCss3, category: 'Languages' },
   { name: 'JavaScript', icon: SiJavascript, category: 'Languages' },
   { name: 'TypeScript', icon: SiTypescript, category: 'Languages' },
   { name: 'Python', icon: SiPython, category: 'Languages' },
@@ -36,7 +35,10 @@ const skills: Skill[] = [
   { name: 'PostgreSQL', icon: SiPostgresql, category: 'Databases' },
   { name: 'Git', icon: SiGit, category: 'Tools' },
   { name: 'GitHub', icon: SiGithub, category: 'Tools' },
-  { name: 'REST APIs', icon: SiJson, category: 'Tools' },
+  { name: 'GitLab', icon: SiGitlab, category: 'Tools' },
+  { name: 'Postman', icon: SiPostman, category: 'Tools' },
+  { name: 'AWS S3', icon: SiAmazonaws, category: 'Tools' },
+  { name: 'REST APIs', icon: SiJson, category: 'Core Skills' },
 ];
 
 const Skills = () => {

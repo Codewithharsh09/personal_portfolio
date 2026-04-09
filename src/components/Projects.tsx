@@ -13,25 +13,25 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Dex Mining',
+    title: 'Razor Clinic',
     description:
-      'Comprehensive backend system for cryptocurrency transaction management and data aggregation. Built scalable REST APIs for handling complex transaction workflows, integrated third-party Web APIs for real-time crypto data, and implemented JWT-based authentication. Utilized MongoDB with Mongoose for efficient data modeling and optimized database queries.',
-    stack: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT', 'REST APIs'],
-    github: '#',
-  },
-  {
-    title: 'Scrappers',
-    description:
-      'Automated web scraping system for extracting product data from various e-commerce websites including clothing, shoes, and other categories. Utilized extensive DOM manipulation to properly extract and fix values from multiple external web pages. Implemented robust data extraction, parsing, and normalization techniques to ensure accurate product information collection.',
-    stack: ['Node.js', 'Puppeteer', 'JavaScript', 'DOM Manipulation', 'Web Scraping'],
-    github: '#',
+      'Clinic Management System backend for a healthcare ERP. Built modules for patient records, consultations, prescriptions, pharmacy dispensing, inventory with real-time stock tracking, and lab workflows with sample tracking and automated report generation.',
+    stack: ['Python', 'SQL', 'SQLAlchemy', 'Twilio', 'Cloudinary'],
+    // github: '#',
   },
   {
     title: 'KBAI',
     description:
-      'Flask-based AI platform for financial analysis and prediction. Implemented user management system with Auth0 and JWT authentication, including role-based permissions. Features company balance sheet upload functionality where users can upload their financial data. The platform analyzes the data and uses graph-based predictions to forecast next year\'s financial growth or decline. Additionally, companies can select and compare with competitor companies for competitive analysis.',
-    stack: ['Python', 'Flask', 'PostgreSQL', 'Auth0', 'JWT', 'AI/ML', 'Graph Analysis'],
-    github: '#',
+      'Financial Analysis & Business Intelligence backend for SME balance sheet processing and KPI benchmarking. Implemented XLSX/XBRL ingestion, automated financial data extraction, S3-backed storage, real-time KPI calculations (27+ metrics), and multi-year benchmark comparisons with dynamic KPI status tracking.',
+    stack: ['Python', 'Flask', 'PostgreSQL', 'SQLAlchemy','Auth0'],
+    // github: '#',
+  },
+  {
+    title: 'Cablinks',
+    description:
+      'HR and Accounting Management System backend. Built inventory, purchases, invoicing, banking, and reporting modules with automated totals/tax/discount calculations, payment workflows, due-date validations, and audit-friendly APIs for cash flow and account statements.',
+    stack: ['Node.js', 'TypeScript', 'MongoDB', 'REST APIs'],
+    // github: '#',
   },
 ];
 

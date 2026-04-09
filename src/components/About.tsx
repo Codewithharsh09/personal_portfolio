@@ -8,8 +8,12 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const handleDownloadResume = () => {
-    // Placeholder for resume download
-    alert('Resume download will be available soon!');
+    const link = document.createElement('a');
+    link.href = '/Harshwardhan-Singh-Resume.pdf';
+    link.download = 'Harshwardhan-Singh-Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   };
 
   return (
@@ -67,18 +71,19 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300 dark:text-gray-700 leading-relaxed">
-              I'm a passionate <span className="text-indigo-400 font-semibold">Backend Developer</span> with 
-              expertise in building scalable and efficient server-side applications. Currently pursuing my MCA at 
-              Vivekananda Global University and working as a Node.js Developer at BriskCovey Technologies.
+              I'm a <span className="text-indigo-400 font-semibold">Backend Developer</span> with 1+ year of
+              experience building secure, scalable APIs and backend systems using Node.js/TypeScript and Python
+              (Flask). I'm currently pursuing my MCA at Vivekananda Global University and working at BriskCovey
+              Technologies.
             </p>
             <p className="text-lg text-gray-300 dark:text-gray-700 leading-relaxed">
-              My journey in backend development has been driven by a love for solving complex problems and 
-              creating robust API systems. I specialize in Node.js, Express, MongoDB, and Flask, with a strong 
-              foundation in database design and RESTful API architecture.
+              I've delivered production features across healthcare ERP, financial analytics/BI, and accounting
+              platforms with strong ownership of PostgreSQL/MongoDB data modeling, SQLAlchemy query optimization,
+              and robust validation and error handling.
             </p>
             <p className="text-lg text-gray-300 dark:text-gray-700 leading-relaxed">
-              When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, 
-              and continuously learning to stay at the forefront of backend development.
+              I also integrate third-party services like AWS S3, Twilio, and Cloudinary, and I care about
+              maintainable delivery through testing (including 200+ unit tests) and structured logging.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
